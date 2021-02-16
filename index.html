@@ -16,28 +16,9 @@
       href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"
     />
     <title>株式会社SHOSEN</title>
-
+<link rel="stylesheet" href="style.css">
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Newsreader&display=swap');
-   
-      * {
-        font-family: 'Newsreader', serif;
-      }
-      body {
-        color:#8B0000;
-      }
-    .product-image{
-      width:100% !important;
-      height:400px !important;
-    }
 
-    @media only screen and(max-width: 350px)  {
-      .product-image{
-      width:100% !important;
-      height:auto !important;
-    }
-
-    }
 
   
     </style>
@@ -395,14 +376,31 @@
              <!-- Section4 Gourment -->
              <section class="relative py-20">
               <div class="container mx-auto px-4">
-                <div class="items-center flex flex-wrap">
-                  <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
+                <div class="items-center flex flex-wrap slider-container">
+                  <div class="img-box w-full md:w-4/12 ml-auto mr-auto px-4">
                     <img
                       alt="..."
-                      class="max-w-full rounded-lg shadow-lg"
+                      class="slide active  max-w-full rounded-lg shadow-lg"
                       src="assets/img/gourmet1.png"
                     />
-                  </div>
+                    <img
+                    alt="..."
+                    class="slide max-w-full rounded-lg shadow-lg"
+                    src="assets/img/gourmet2.png"
+                  />
+                  <img
+                  alt="..."
+                  class="slide  max-w-full rounded-lg shadow-lg"
+                  src="assets/img/gourmet3.png"
+                />
+                <button class="arrow left-arrow" id="left">
+                  <i class="fas fa-arrow-left"></i>
+                </button>
+                <button class="arrow right-arrow" id="right">
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+                 </div>
+              
                   <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
                     <div class="md:pr-12">
                    
@@ -660,6 +658,7 @@
       </div>
     </footer>
   </body>
+  <script src="script.js"></script>
   <script>
     function toggleNavbar(collapseID) {
       document.getElementById(collapseID).classList.toggle("hidden");

@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader&display=swap');
+   
+* {
+  font-family: 'Newsreader', serif;
+}
+body {
+  color:#8B0000;
+}
+.product-image{
+width:100% !important;
+height:400px !important;
+}
+
+
+.slide {
+  opacity: 0;
+  background-position: center center;
+  transition: 0.8s ease;
+  z-index: 1;
+  display: none;
+  width:400px;
+  height: 500px;
+}
+
+.slide.active {
+  opacity: 1;
+  display: block;
+  width:400px;
+  height: 500px;
+  
+}
+
+.arrow {
+  background-color: transparent;
+  padding: 20px;
+  font-size: 30px;
+  border: 2px solid orange;
+  transform: translateY(-50%);
+  cursor: pointer;
+  margin-top:50px;
+}
+
+.arrow:focus {
+  outline: 0;
+}
+
+.left-arrow {
+  left: calc(15vw - 65px);
+}
+
+.right-arrow {
+  right: calc(15vw - 65px);
+}
+
+@media only screen and(max-width: 350px)  {
+  .product-image{
+  width:100% !important;
+  height:auto !important;
+  }
+  
+  }
