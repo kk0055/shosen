@@ -18,6 +18,11 @@
     <title>株式会社SHOSEN</title>
 
     <style>
+    @import url('https://fonts.googleapis.com/css2?family=Newsreader&display=swap');
+   
+      * {
+        font-family: 'Newsreader', serif;
+      }
       body {
         color:#8B0000;
       }
@@ -26,6 +31,15 @@
       height:400px !important;
     }
 
+    @media only screen and(max-width: 350px)  {
+      .product-image{
+      width:100% !important;
+      height:auto !important;
+    }
+
+    }
+
+  
     </style>
   </head>
   <body class="bg-white">
@@ -252,7 +266,7 @@
             <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
               <div class="md:pr-12">
              
-                <h3 class="text-3xl font-semibold uppercase">About us</h3>
+                <h3 class="text-3xl font-semibold uppercase mt-5">About us</h3>
                 <p class="mt-4 text-lg leading-relaxed text-gray-600">
                  最高級のバニラビーンズをお客様へ提供すること、インドネシアの農業に従事する方々の生活を良くすることをミッションとしてインドネシア産のバニラビーンズの販売を行っております。
                   <br>
@@ -284,7 +298,7 @@
               <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
                 <div class="md:pr-12">
                
-                  <h3 class="text-3xl font-semibold mb-2 mb-2">Our farms</h3>
+                  <h3 class="text-3xl font-semibold mb-2 mt-5">Our farms</h3>
                   <div class="flex">
                   <img src="assets/img/farms2.png" alt="" width="150px" height="100px" class="ml-1" >
                   <img src="assets/img/farms3.png" alt="" width="150px" height="100px" class="ml-1" >
@@ -297,49 +311,6 @@
                     started faster. You can change the text and images and you're
                     good to go.
                   </p>
-                  <ul class="list-none mt-6">
-                    <li class="py-2">
-                      <div class="flex items-center">
-                        <div>
-                          <span
-                            class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"
-                            ><i class="fas fa-fingerprint"></i
-                          ></span>
-                        </div>
-                        <div>
-                          <h4 class="text-gray-600">
-                            Carefully crafted components
-                          </h4>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="py-2">
-                      <div class="flex items-center">
-                        <div>
-                          <span
-                            class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"
-                            ><i class="fab fa-html5"></i
-                          ></span>
-                        </div>
-                        <div>
-                          <h4 class="text-gray-600">Amazing page examples</h4>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="py-2">
-                      <div class="flex items-center">
-                        <div>
-                          <span
-                            class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"
-                            ><i class="far fa-paper-plane"></i
-                          ></span>
-                        </div>
-                        <div>
-                          <h4 class="text-gray-600">Dynamic components</h4>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
                 </div>
               </div>
             </div>
@@ -359,12 +330,12 @@
             </div>
           </div>
 
-          <div class="box flex items-center flex-col justify-center
+          <div class="flex items-center flex-col justify-center
           md:flex-row ">
         
           <!-- Block1 -->
               <div>
-                <div class="ml-auto mr-auto px-4">
+                <div class="ml-auto mr-auto px-4 mb-5">
                   
                   <img
                     alt="..."
@@ -384,7 +355,7 @@
             </div>
         <!-- Block2 -->  
               <div>
-                <div class="ml-auto mr-auto px-4">
+                <div class="ml-auto mr-auto px-4  mb-5">
                   <img
                     alt="..."
                     class="product-image rounded-lg shadow-lg"
@@ -402,13 +373,12 @@
             </div>
              <!-- Block3 --> 
                 <div>
-                  <div class="ml-auto mr-auto px-4">
+                  <div class="ml-auto mr-auto px-4  mb-5">
                     <img
                       alt="..."
                       class="product-image rounded-lg shadow-lg"
                       src="assets/img/product3.png"
-                     
-                    />
+                      />
                   
                   <h5 class="mt-4">Planifolia</h5> 
                   <p class="text-lg leading-relaxed text-gray-600">
@@ -421,6 +391,39 @@
               </div>    
             </div>  
       </section>
+
+             <!-- Section4 Gourment -->
+             <section class="relative py-20">
+              <div class="container mx-auto px-4">
+                <div class="items-center flex flex-wrap">
+                  <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
+                    <img
+                      alt="..."
+                      class="max-w-full rounded-lg shadow-lg"
+                      src="assets/img/gourmet1.png"
+                    />
+                  </div>
+                  <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
+                    <div class="md:pr-12">
+                   
+                      <h3 class="text-3xl font-semibold uppercase mt-5">About us</h3>
+                      <p class="mt-4 text-lg leading-relaxed text-gray-600">
+                       最高級のバニラビーンズをお客様へ提供すること、インドネシアの農業に従事する方々の生活を良くすることをミッションとしてインドネシア産のバニラビーンズの販売を行っております。
+                        <br>
+                        販売国の規制に従い、安全性を保証する証明書とともに販売をしております。
+      
+                        最高級品質のTahitian、Planifolia、Gourmetの3種類のバニラをお手頃な価格で販売しております。
+                        高品質を保つため、専門家のアドバイスの元栽培されたバニラのみを取り扱っております。
+                        
+                    
+                      </p>
+           
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+              <!-- end of Section4 Gourment -->
      <!-- End Section3 -->
 
       <!-- <section class="pb-20 relative block bg-gray-900">
