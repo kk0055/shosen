@@ -26,13 +26,31 @@ height:400px !important;
   height: 450px; 
   position: relative;
 }
-
 .slide.active {
   opacity: 1;
   display: block;
   width:400px;
   height: 450px;
 }
+
+.slide-planifolia {
+  opacity: 0;
+  background-position: center center;
+  transition: 0.8s ease;
+  z-index: 1;
+  display: none;
+  width:400px;
+  height: 450px; 
+  position: relative;
+}
+
+.slide-planifolia.active {
+  opacity: 1;
+  display: block;
+  width:400px;
+  height: 450px;
+}
+
 
 .arrow {
   background-color: transparent;
