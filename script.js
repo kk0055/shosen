@@ -5,7 +5,8 @@ const rightBtn = document.getElementById('right')
 const slidesPlan = document.querySelectorAll('.slide-planifolia')
 const rightBtnForPlan = document.getElementById('right2')
 
-
+const slidesTahitian = document.querySelectorAll('.slide-tahitian')
+const rightBtnForTahitian = document.getElementById('right3')
 
 let activeSlide = 0
 
@@ -32,6 +33,17 @@ rightBtnForPlan.addEventListener('click', () => {
 
 })
 
+rightBtnForTahitian.addEventListener('click', () => {
+  activeSlide++
+
+  if (activeSlide > slidesPlan.length - 1) {
+    activeSlide = 0
+  }
+
+  setActiveSlideForTahitian()
+
+})
+
 //Groumet
 function setActiveSlide() {
   slides.forEach((slide) => slide.classList.remove('active'))
@@ -44,4 +56,11 @@ function setActiveSlideForPlan() {
   slidesPlan.forEach((slide) => slide.classList.remove('active'))
 
   slidesPlan[activeSlide].classList.add('active')
+}
+
+//Tahitian
+function setActiveSlideForTahitian() {
+  slidesTahitian.forEach((slide) => slide.classList.remove('active'))
+
+  slidesTahitian[activeSlide].classList.add('active')
 }
